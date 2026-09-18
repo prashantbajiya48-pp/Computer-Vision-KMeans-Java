@@ -7,9 +7,10 @@
 The objective of this project is to divide an image into meaningful regions using the K-Means clustering algorithm. Each pixel is assigned to one of K clusters according to its colour values.
 
 ## 3. Technologies Used
-- Python
-- OpenCV
-- NumPy
+- Java
+- Java AWT
+- Java BufferedImage
+- Java ImageIO
 - K-Means Clustering
 
 ## 4. Project Structure
@@ -17,17 +18,15 @@ The objective of this project is to divide an image into meaningful regions usin
 ```text
 computer_vision_image_segmentation_project/
 │
-├── main.py
-├── requirements.txt
+│
+├── Main.java
 ├── README.md
 ├── PROJECT_REPORT.md
-├── .gitignore
 ├── sample.jpg
 └── output/
     ├── original.jpg
     ├── segmented.jpg
     └── comparison.jpg
-```
 
 ## 5. How the Project Works
 
@@ -39,36 +38,41 @@ computer_vision_image_segmentation_project/
 6. Save the segmented image and comparison image.
 
 ## 6. Installation
+```markdown
+Install Java JDK 8 or newer.
 
-Install Python 3.9 or newer.
-
-Open the terminal inside this project folder and run:
+Open the terminal inside this project folder and compile the program:
 
 ```bash
-pip install -r requirements.txt
-```
+javac Main.java
 
 ## 7. Run the Project
 
-For the included sample image:
+```markdown
+For the included sample image, compile and run the Java program:
 
 ```bash
-python main.py --image sample.jpg --k 3
-```
-
-You can try different numbers of clusters:
-
-```bash
-python main.py --image sample.jpg --k 2
-python main.py --image sample.jpg --k 4
-python main.py --image sample.jpg --k 5
-```
+javac Main.java
+java Main'
 
 For your own image:
 
+1. Place your image in the project folder.
+2. Rename the image to one of the supported names:
+   - `sample.jpg`
+   - `sample.jpeg`
+   - `sample.png`
+   - `input.jpg`
+   - `input.jpeg`
+   - `input.png`
+   - `image.jpg`
+   - `image.jpeg`
+   - `image.png`
+
+3. Compile the Java program:
+
 ```bash
-python main.py --image path/to/your_image.jpg --k 3
-```
+javac Main.java
 
 ## 8. Output
 
